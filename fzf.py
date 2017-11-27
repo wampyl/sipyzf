@@ -3,7 +3,8 @@ import re
 
 values = {"CertNo":"130923199303160014"}
 data = urllib.parse.urlencode(values).encode("utf-8")
-url = "http://ent.sipmch.com.cn/ModuleDefaultCompany/RentManage/SearchRentNo"
+#url = "http://ent.sipmch.com.cn/ModuleDefaultCompany/RentManage/SearchRentNo"
+url = "http://ent.sipmch.sipac.gov.cn/ModuleDefaultCompany/RentManage/SearchRentNo"
 req = urllib.request.Request(url)
 with urllib.request.urlopen(req,data=data) as f:
     resp = f.read().decode("utf-8")
